@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+#main_header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color:#e8edd3;
+    text-align: center;
+    z-index: 999;
+}
+.inner{
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+}
+#logo{
+    display: inline-block;
+    width: 150px;
+}
+#logo img{
+    width: 100%;
+   
+   
+}
+#logo a{
+    line-height: 100px;
+    display: block;
+}
+#nav_toggle{
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+    margin-top: 25px;
+}
+#nav_toggle img{
+    width: 100%;
+}
+
+#main_nav{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+#main_nav ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    background-color:#f2f2f2;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 180px;
+}
+#main_nav li{
+    line-height: 4.5rem;
+}
+
+#main_nav a{
+    color: black;
+    font-family: 'GmarketSansMedium';
+    font-size: 1.5rem;
+}
+#main_nav a:hover{
+    border-bottom: 3.5px solid #57C3E0;
+}
+#main_nav .close{
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+#main_nav .close img{
+    width: 100%;
+}
+
+
+
+#main_carousel{
+    position: relative;
+    height: 100vh;
+    box-sizing: border-box;
+    padding-top: 100px;
+    overflow: hidden;
+}
+.btn1{
+    width: 100px;
+    height: 100px;
+    
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.left{
+    left: 0;
+    
+    background-image: url(../images/arrow_lt.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30px;
+}
+.right{
+    right: 0;
+   
+    background-image: url(../images/arrow_rt.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 30px;
+}
+.banner{
+    position: absolute;
+    top: 50px;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+}
+.banner:nth-child(1){
+    background-image: url(../images/main1.jpg);
+}
+.banner:nth-child(2){
+    background-image: url(../images/main2.jpg);
+}
+
+
+h2{
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    padding-top: 90px;
+    text-align: center;
+  
+}
+
+#on_view_wrap{
+    padding: 90px 0;
+}
+.on_view{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+.on_view .img{
+    width: 55%;
+    height: 550px;
+    background-image: url(../images/program.jpg);
+    background-size: cover;
+    background-position: center center;
+    flex-shrink: 0;
+    position: relative;
+}
+.on_view:nth-child(2) .img{
+    background-image: url('../images/program2.png');
+}
+.on_view .con{
+    padding-left: 100px;
+    position: relative;
+    width: 45%;
+}
+
+.con * {
+    padding-bottom: 100px;
+}
+.con .category{
+    padding-bottom: 25px;
+}
+.con h3{
+    color: #df7393;
+    font-family: 'Quicksand', sans-serif;
+
+   font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+
+
+/* bestitem */
+
+.best_item h2{
+    text-align: center;
+}
+
+.best_item ul{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.best_item h2::after{
+    content: url(../img/title_dot.png);
+    
+}
+.best_item h2::before{
+    content: url(../img/title_dot.png);
+}
+
+.best_item h2{
+ 
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    
+    
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.best_item ul li{
+    float: left;
+    margin-right: 40px;
+   
+}
+
+.best_item ul li p{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.best_item ul li:last-child{
+    margin-right: 0;
+}
+
+.best_item ul li a{
+    display: block;
+}
+
+/***** 추가 시작 *****/
+
+.best_item ul li:hover img{
+    transform: scale(1.2,1.2);
+    transition: all ease 1s;
+}
+
+.best_item ul li:hover p{
+    transform: translateY(-170px);
+    transition: 1s;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-shadow: -2px 0px white, 0px 2px white, 2px 0px white, 0px -2px white;
+}
+/***** 추가 끝 *****/
+
+
+
+/* review */
+
+
+.review ul{
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.review h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 150px;
+    margin-top: 100px;
+    font-family: 'Quicksand', sans-serif;
+   
+}
+.review h2:before{
+    content: url(../img/title_dot.png);
+}
+
+.review h2::after{
+    content: url(../img/title_dot.png);
+}
+
+.review ul li{
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+.review ul li a{
+    display:block;
+}
+.review ul li:last-child{
+    margin-right: 0;
+}
+
+.review h5{
+    text-align: center;
+    color: white;
+    margin-top: -60px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+/***** 추가시작 *****/
+
+.review .textballoon img{
+    position: absolute;
+    opacity: 0;
+    left: 20%;
+    top: 270px;
+    
+    
+}
+
+
+.review ul li:hover .textballoon img{
+    opacity: 1;
+    transition: 1s;
+    
+    
+}
+
+.review ul li:hover img{
+    transform: scale(130%, 130%);
+    transition: 1s;
+   
+}
+
+
+
+.review ul li:hover h5{
+    transform: translateY(-150px);
+    transition: 1s;
+    text-shadow: -2px 0px black, 0px 2px black, 2px 0px black, 0px -2px black;
+    
+    
+    
+    
+}
+
+.review ul li:hover{
+    z-index: 99;
+}
+
+
+/* post */
+
+.post{
+    height: 100px;
+    margin-bottom: 150px;
+    
+}
+.post ul li:first-child{
+    background-image: url(../images/guide1.jpg);
+    background-repeat: no-repeat;
+    
+    width: 620px;
+    height: 100px;
+    
+}
+
+.post ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    
+}
+.post ul li:last-child{
+    background-image: url(../images/guide2.jpg);
+    background-repeat: no-repeat;
+    
+    width: 620px;
+    height: 100px;
+   
+}
+
+.post a{
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    padding-left:20px;
+    position: relative;
+    top: 8px;
+    display: block;
+    height: 100px;
+    width: 100%;
+   
+}
+.post a:after{
+    content: url(../images/guide_arrow.png);
+    position: relative;
+    left: 220px;
+    top: 20px;
+    
+}
+
+.post #book:after{
+    content: url(../images/guide_arrow.png);
+    position: relative;
+    left: 240px;
+    top: 20px;
+    
+}
+
+.post ul li{
+    position: relative;
+}
+
+
+/******* 추가시작 *******/
+
+.post ul li a::before{
+    content: "";
+    background-color:#FFAFD2;
+    width: 620px;
+    height: 100%;
+    display: block;
+    top: -8px; left: 0;
+    position: absolute;
+    opacity: 0;
+
+}
+
+.post ul li span{
+    position: absolute;
+    top: 30px; left: 270px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+
+.post ul li:hover a::before{
+    opacity: 0.9;
+    transition: 0.5s;
+    
+}
+
+.post ul li:hover span{
+    opacity: 1;
+    transition: 0.5s;
+}
+.post ul li:hover a::after{
+    opacity: 0;
+}
+
+/******* 추가끝 *******/
+
+/**************** footer ****************/
+
+footer{
+    
+    clear: both;
+    border-top: 1px solid #000;
+    height: 400px;
+}
+
+footer .icon{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    /* height: 50px;
+    padding-left: 560px;
+    margin-top: 30px; */
+}
+footer .icon a{
+    
+    padding-right:10px;
+}
+
+
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+footer ul li{
+    float: left;
+    margin-right: 60px;
+}
+footer p{
+    text-align: center;
+    font-size: 0.7rem;
+    line-height: 1.6rem;
+}
+
+footer ul a:hover{
+    color: #FF1C7F;
+}
+
+footer ul li a{
+    font-weight: 500;
+}
+
+/**************** support ****************/
+
+.support{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
